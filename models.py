@@ -52,7 +52,7 @@ class ResearchModels():
         model.add(Dense(self.nb_classes, activation='softmax'))
         return model
 
-    def 3dconvolution(self):
+    def threedconvolution(self):
         model = Sequential()
         model.add(Conv3D(64, (4,4,4), activation='relu', input_shape=self.input_shape))
         model.add(MaxPooling3D(pool_size=(1, 2, 2), strides=(1, 2, 2)))
